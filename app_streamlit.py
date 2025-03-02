@@ -16,7 +16,7 @@ if st.button("Predict"):
             st.write("Error: Please enter exactly 4 values.")
         else:
             # Send request to Flask API
-            response = requests.post("http://127.0.0.1:5000/predict", json={"features": input_list})
+            response = requests.post("https://fast-api-testing-w0l1.onrender.com", json={"features": input_list})
 
             # Debugging: Print the full response to see if it's correct
             st.write("Raw API Response:", response.text)

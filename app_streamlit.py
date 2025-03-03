@@ -4,6 +4,9 @@ import requests
 st.title("AI Model Prediction")
 
 st.write("Enter 4 numbers (comma-separated):")
+st.write("0 → Iris-setosa
+1 → Iris-versicolor
+2 → Iris-virginica")
 input_data = st.text_input("Example: 5.1, 3.5, 1.4, 0.2")
 
 if st.button("Predict"):
